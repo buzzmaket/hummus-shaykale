@@ -450,6 +450,7 @@ h3 { font-size: clamp(1.3rem, 3vw, 1.8rem); }
   width: 75%;
   height: 75%;
   object-fit: contain;
+  mix-blend-mode: multiply;
   filter: drop-shadow(0 20px 40px rgba(0,0,0,0.3));
   animation: float 4s ease-in-out infinite;
 }
@@ -574,23 +575,22 @@ section {
   justify-content: center;
 }
 .product-img-container {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
+  width: 220px;
+  height: 220px;
+  border-radius: var(--radius-lg);
   overflow: hidden;
-  background: linear-gradient(135deg, var(--cream), var(--white));
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: var(--shadow-xl);
+  filter: drop-shadow(0 16px 40px rgba(0,0,0,0.18));
   position: relative;
   z-index: 2;
-  border: 4px solid var(--white);
 }
 .product-img-container img {
-  width: 130%;
-  height: 130%;
-  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 /* Value lines radiating from product */
