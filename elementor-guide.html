@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>מדריך מעבר לאלמנטור — חומוס שייקל'ה</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;600;700;800&family=Secular+One&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Heebo', sans-serif; background: #f5f5f5; color: #171717; direction: rtl; line-height: 1.7; }
+    .page { max-width: 960px; margin: 0 auto; padding: 40px 24px; }
+    h1 { font-family: 'Secular One', sans-serif; font-size: 2.2rem; margin-bottom: 8px; color: #14532d; }
+    h2 { font-family: 'Secular One', sans-serif; font-size: 1.4rem; color: #14532d; margin: 40px 0 16px; padding-bottom: 8px; border-bottom: 3px solid #f97316; }
+    h3 { font-size: 1rem; font-weight: 700; color: #404040; margin: 20px 0 8px; }
+    .subtitle { color: #737373; margin-bottom: 40px; font-size: 1.05rem; }
+    .card { background: white; border-radius: 16px; padding: 24px; margin-bottom: 16px; box-shadow: 0 2px 12px rgba(0,0,0,0.07); }
+    .copy-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; background: #f5f5f5; border-radius: 8px; padding: 10px 16px; margin-bottom: 8px; font-size: 0.9rem; }
+    .copy-val { font-family: monospace; font-size: 0.95rem; color: #166534; font-weight: 700; }
+    .copy-btn { background: #14532d; color: white; border: none; border-radius: 6px; padding: 4px 12px; font-size: 0.8rem; cursor: pointer; white-space: nowrap; font-family: 'Heebo', sans-serif; }
+    .copy-btn:hover { background: #f97316; }
+    .color-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px; }
+    .color-chip { border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    .color-swatch { height: 64px; }
+    .color-info { background: white; padding: 10px 12px; }
+    .color-name { font-weight: 700; font-size: 0.85rem; color: #171717; }
+    .color-hex { font-family: monospace; font-size: 0.8rem; color: #737373; }
+    .color-role { font-size: 0.75rem; color: #737373; margin-top: 2px; }
+    .section-map { border: 1px solid #e5e5e5; border-radius: 12px; overflow: hidden; margin-bottom: 12px; }
+    .section-map-header { background: #14532d; color: white; padding: 12px 20px; display: flex; justify-content: space-between; align-items: center; }
+    .section-map-header h4 { font-family: 'Secular One', sans-serif; font-size: 1rem; }
+    .section-map-body { padding: 16px 20px; }
+    .section-map-body ul { padding-right: 20px; }
+    .section-map-body li { margin-bottom: 4px; font-size: 0.9rem; color: #404040; }
+    .badge { background: #f97316; color: white; padding: 2px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; }
+    .css-block { background: #1e1e1e; color: #9cdcfe; border-radius: 10px; padding: 20px; font-family: monospace; font-size: 0.85rem; line-height: 1.8; overflow-x: auto; margin: 8px 0 16px; white-space: pre; }
+    .css-block .prop { color: #9cdcfe; }
+    .css-block .val { color: #ce9178; }
+    .css-block .comment { color: #6a9955; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+    th { background: #dcfce7; color: #14532d; padding: 10px 14px; text-align: right; font-weight: 700; }
+    td { padding: 10px 14px; border-bottom: 1px solid #f5f5f5; }
+    tr:last-child td { border-bottom: none; }
+    .tip { background: #fef9c3; border-right: 4px solid #f97316; border-radius: 0 10px 10px 0; padding: 12px 16px; font-size: 0.9rem; margin: 12px 0; }
+    .tip strong { color: #f97316; }
+    @media print { .copy-btn { display: none; } }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <h1>מדריך מעבר לאלמנטור</h1>
+  <p class="subtitle">חומוס שייקל'ה — כל מה שצריך לשחזר את העיצוב ב-WordPress + Elementor Pro</p>
+
+  <!-- ===== COLORS ===== -->
+  <h2>1. צבעים — Elementor › Global Colors</h2>
+  <div class="card">
+    <p style="margin-bottom:16px;font-size:0.9rem;color:#737373;">לך ל-Elementor › Site Settings › Global Colors והוסף את הצבעים הבאים:</p>
+    <div class="color-grid">
+      <div class="color-chip">
+        <div class="color-swatch" style="background:#14532d;"></div>
+        <div class="color-info">
+          <div class="color-name">ירוק כהה</div>
+          <div class="color-hex">#14532d</div>
+          <div class="color-role">צבע ראשי, Header, Footer</div>
+        </div>
+      </div>
+      <div class="color-chip">
+        <div class="color-swatch" style="background:#166534;"></div>
+        <div class="color-info">
+          <div class="color-name">ירוק</div>
+          <div class="color-hex">#166534</div>
+          <div class="color-role">כפתורים, CTA section</div>
+        </div>
+      </div>
+      <div class="color-chip">
+        <div class="color-swatch" style="background:#a3e635;"></div>
+        <div class="color-info">
+          <div class="color-name">ליים</div>
+          <div class="color-hex">#a3e635</div>
+          <div class="color-role">פונט script, הדגשות</div>
+        </div>
+      </div>
+      <div class="color-chip">
+        <div class="color-swatch" style="background:#f97316;"></div>
+        <div class="color-info">
+          <div class="color-name">כתום</div>
+          <div class="color-hex">#f97316</div>
+          <div class="color-role">כפתור Primary, אקצנטים</div>
+        </div>
+      </div>
+      <div class="color-chip">
+        <div class="color-swatch" style="background:#fefce8;border:1px solid #e5e5e5;"></div>
+        <div class="color-info">
+          <div class="color-name">קרם</div>
+          <div class="color-hex">#fefce8</div>
+          <div class="color-role">רקע חלקים</div>
+        </div>
+      </div>
+      <div class="color-chip">
+        <div class="color-swatch" style="background:#dcfce7;"></div>
+        <div class="color-info">
+          <div class="color-name">ירוק חיוור</div>
+          <div class="color-hex">#dcfce7</div>
+          <div class="color-role">תגיות, רקעי אייקונים</div>
+        </div>
+      </div>
+      <div class="color-chip">
+        <div class="color-swatch" style="background:#171717;"></div>
+        <div class="color-info">
+          <div class="color-name">שחור</div>
+          <div class="color-hex">#171717</div>
+          <div class="color-role">Footer רקע</div>
+        </div>
+      </div>
+      <div class="color-chip">
+        <div class="color-swatch" style="background:#737373;"></div>
+        <div class="color-info">
+          <div class="color-name">אפור טקסט</div>
+          <div class="color-hex">#737373</div>
+          <div class="color-role">טקסט תיאור משני</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== FONTS ===== -->
+  <h2>2. פונטים — Elementor › Global Fonts</h2>
+  <div class="card">
+    <div class="tip"><strong>שלב ראשון:</strong> הוסף ל-WordPress › Appearance › Theme File Editor › functions.php את הקוד הבא, או השתמש בתוסף "Google Fonts Typography"</div>
+
+    <div class="css-block"><span class="comment">/* הוסף ל-functions.php או ל-Custom CSS של הדף */</span>
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&family=Secular+One&family=Amatic+SC:wght@700&display=swap');</div>
+
+    <h3>הגדרות ב-Elementor › Global Fonts:</h3>
+    <table>
+      <tr><th>שם</th><th>פונט</th><th>שימוש</th><th>משקל</th></tr>
+      <tr><td><strong>Primary</strong></td><td>Heebo</td><td>טקסט גוף, פסקאות</td><td>400, 500</td></tr>
+      <tr><td><strong>Secondary</strong></td><td>Secular One</td><td>כותרות H1–H3</td><td>400 (Regular)</td></tr>
+      <tr><td><strong>Accent</strong></td><td>Amatic SC</td><td>כיתובים דקורטיביים</td><td>700 Bold</td></tr>
+    </table>
+
+    <h3 style="margin-top:20px;">גדלי פונט לכותרות:</h3>
+    <table>
+      <tr><th>תגית</th><th>גודל Desktop</th><th>גודל Mobile</th></tr>
+      <tr><td>H1</td><td>72–88px</td><td>45px</td></tr>
+      <tr><td>H2</td><td>48–56px</td><td>32px</td></tr>
+      <tr><td>H3</td><td>24–28px</td><td>20px</td></tr>
+      <tr><td>כיתוב Script (Amatic SC)</td><td>48px</td><td>32px</td></tr>
+      <tr><td>גוף</td><td>16–18px</td><td>15px</td></tr>
+    </table>
+  </div>
+
+  <!-- ===== BUTTONS ===== -->
+  <h2>3. כפתורים — Elementor › Global Buttons</h2>
+  <div class="card">
+    <h3>כפתור Primary (כתום)</h3>
+    <table>
+      <tr><th>מאפיין</th><th>ערך</th></tr>
+      <tr><td>Background</td><td>#f97316</td></tr>
+      <tr><td>Color</td><td>#ffffff</td></tr>
+      <tr><td>Border Radius</td><td>100px</td></tr>
+      <tr><td>Padding</td><td>16px 36px</td></tr>
+      <tr><td>Font Weight</td><td>700</td></tr>
+      <tr><td>Box Shadow</td><td>0 4px 16px rgba(249,115,22,0.35)</td></tr>
+      <tr><td>Hover Background</td><td>#ea580c</td></tr>
+      <tr><td>Hover Transform</td><td>translateY(-3px)</td></tr>
+    </table>
+
+    <h3 style="margin-top:20px;">כפתור Secondary (מסגרת ירוקה)</h3>
+    <table>
+      <tr><th>מאפיין</th><th>ערך</th></tr>
+      <tr><td>Background</td><td>#ffffff</td></tr>
+      <tr><td>Color</td><td>#14532d</td></tr>
+      <tr><td>Border</td><td>2px solid #14532d</td></tr>
+      <tr><td>Border Radius</td><td>100px</td></tr>
+      <tr><td>Hover Background</td><td>#14532d</td></tr>
+      <tr><td>Hover Color</td><td>#ffffff</td></tr>
+    </table>
+
+    <div class="tip" style="margin-top:16px;"><strong>Custom CSS לכפתורים (אלמנטור Custom CSS):</strong></div>
+    <div class="css-block"><span class="comment">/* הוסף ב-Elementor › Site Settings › Custom CSS */</span>
+.elementor-button-primary {
+  <span class="prop">background</span>: <span class="val">#f97316</span> !important;
+  <span class="prop">border-radius</span>: <span class="val">100px</span> !important;
+  <span class="prop">box-shadow</span>: <span class="val">0 4px 16px rgba(249,115,22,0.35)</span> !important;
+  <span class="prop">transition</span>: <span class="val">all 0.35s cubic-bezier(0.4,0,0.2,1)</span> !important;
+}
+.elementor-button-primary:hover {
+  <span class="prop">transform</span>: <span class="val">translateY(-3px)</span> !important;
+  <span class="prop">box-shadow</span>: <span class="val">0 8px 28px rgba(249,115,22,0.45)</span> !important;
+}</div>
+  </div>
+
+  <!-- ===== SPACING ===== -->
+  <h2>4. מרווחים — Section Padding</h2>
+  <div class="card">
+    <table>
+      <tr><th>סוג</th><th>Desktop</th><th>Tablet</th><th>Mobile</th></tr>
+      <tr><td>Section padding כללי</td><td>100px למעלה/למטה</td><td>80px</td><td>72px</td></tr>
+      <tr><td>Container max-width</td><td>1200px</td><td>100%</td><td>100%</td></tr>
+      <tr><td>Container padding</td><td>0 24px</td><td>0 20px</td><td>0 16px</td></tr>
+      <tr><td>Gap בין כרטיסים</td><td>24px</td><td>20px</td><td>16px</td></tr>
+    </table>
+  </div>
+
+  <!-- ===== SECTION MAP ===== -->
+  <h2>5. מבנה הדפים — מה לבנות באלמנטור</h2>
+
+  <div class="section-map">
+    <div class="section-map-header">
+      <h4>עמוד הבית (index)</h4>
+      <span class="badge">12 סקשנים</span>
+    </div>
+    <div class="section-map-body">
+      <table>
+        <tr><th>#</th><th>שם הסקשן</th><th>רקע</th><th>ווידג'טים עיקריים</th></tr>
+        <tr><td>1</td><td>Hero</td><td>#14532d (gradient)</td><td>Heading, Text, Button (x2), Image</td></tr>
+        <tr><td>2</td><td>לפני הסיפור — חלק 1: קופסא</td><td>#ffffff</td><td>Image, Heading, Text, Button, Icon List</td></tr>
+        <tr><td>3</td><td>לפני הסיפור — חלק 2: חומוסייה</td><td>#ffffff</td><td>Heading, Text, Button, Image Gallery (3)</td></tr>
+        <tr><td>4</td><td>המייסד — אמיר</td><td>#fefce8</td><td>Image, Heading, Text, Blockquote</td></tr>
+        <tr><td>5</td><td>Timeline — הסיפור</td><td>#14532d</td><td>Heading, Timeline Widget / Icon List</td></tr>
+        <tr><td>6</td><td>שירותים</td><td>#fefce8</td><td>Image Box (x3), Icon Box (x3)</td></tr>
+        <tr><td>7</td><td>סטטיסטיקות</td><td>#ffffff</td><td>Counter Widget (x4)</td></tr>
+        <tr><td>8</td><td>המלצות</td><td>#14532d</td><td>Testimonial Carousel / Cards (x3)</td></tr>
+        <tr><td>9</td><td>גלריה</td><td>#fefce8</td><td>Gallery Widget (5 תמונות)</td></tr>
+        <tr><td>10</td><td>המיקום / החומסייה</td><td>#ffffff</td><td>Text, Google Maps Widget</td></tr>
+        <tr><td>11</td><td>CTA</td><td>#166534 (gradient)</td><td>Heading, Text, Button (x3), Social Icons</td></tr>
+        <tr><td>12</td><td>Footer</td><td>#171717</td><td>Logo, Text, Nav Menu, Contact Info</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="section-map">
+    <div class="section-map-header">
+      <h4>דף נקודות מכירה</h4>
+      <span class="badge">4 סקשנים</span>
+    </div>
+    <div class="section-map-body">
+      <ul>
+        <li><strong>Page Hero:</strong> רקע ירוק, כותרת, תגית "15+ נקודות"</li>
+        <tr><td></td></tr>
+        <li><strong>מפה:</strong> Google Maps Widget — תצוגה ארצית</li>
+        <li><strong>חיפוש + רשימה:</strong> Search Form + Repeater / Posts Grid — 15 נקודות עם קטגוריות</li>
+        <li><strong>CTA:</strong> כפתורי Wolt, 10bis, צור קשר</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section-map">
+    <div class="section-map-header">
+      <h4>דף צור קשר</h4>
+      <span class="badge">4 סקשנים</span>
+    </div>
+    <div class="section-map-body">
+      <ul>
+        <li><strong>Page Hero:</strong> רקע ירוק, "נשמח לשמוע מכם"</li>
+        <li><strong>כרטיסי יצירת קשר:</strong> Icon Box (x4) — טלפון, WhatsApp, אימייל, סושיאל</li>
+        <li><strong>טופס:</strong> Form Widget — שם, טלפון, אימייל, נושא, הודעה, Checkbox</li>
+        <li><strong>מיקום:</strong> Google Maps + שעות פתיחה</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ===== CUSTOM CSS ===== -->
+  <h2>6. Custom CSS — הדבק ב-Elementor Site Settings › Custom CSS</h2>
+  <div class="card">
+    <div class="css-block"><span class="comment">/* ===== חומוס שייקל'ה — Custom CSS לאלמנטור ===== */</span>
+
+<span class="comment">/* RTL ועברית */</span>
+body {
+  <span class="prop">direction</span>: <span class="val">rtl</span>;
+  <span class="prop">font-family</span>: <span class="val">'Heebo', sans-serif</span>;
+  <span class="prop">-webkit-font-smoothing</span>: <span class="val">antialiased</span>;
+}
+
+<span class="comment">/* Section label — תגית קטנה מעל כותרת */</span>
+.section-label {
+  <span class="prop">display</span>: <span class="val">inline-flex</span>;
+  <span class="prop">align-items</span>: <span class="val">center</span>;
+  <span class="prop">gap</span>: <span class="val">8px</span>;
+  <span class="prop">font-size</span>: <span class="val">0.85rem</span>;
+  <span class="prop">font-weight</span>: <span class="val">700</span>;
+  <span class="prop">text-transform</span>: <span class="val">uppercase</span>;
+  <span class="prop">letter-spacing</span>: <span class="val">0.08em</span>;
+  <span class="prop">color</span>: <span class="val">#166534</span>;
+}
+.section-label::before {
+  <span class="prop">content</span>: <span class="val">''</span>;
+  <span class="prop">width</span>: <span class="val">32px</span>;
+  <span class="prop">height</span>: <span class="val">2px</span>;
+  <span class="prop">background</span>: <span class="val">#166534</span>;
+  <span class="prop">display</span>: <span class="val">block</span>;
+}
+
+<span class="comment">/* כותרת דקורטיבית (Amatic SC) */</span>
+.script-heading {
+  <span class="prop">font-family</span>: <span class="val">'Amatic SC', cursive</span>;
+  <span class="prop">font-size</span>: <span class="val">3rem</span>;
+  <span class="prop">color</span>: <span class="val">#a3e635</span>;
+  <span class="prop">line-height</span>: <span class="val">1</span>;
+}
+
+<span class="comment">/* כרטיס שירות — Hover */</span>
+.elementor-widget-image-box:hover {
+  <span class="prop">transform</span>: <span class="val">translateY(-8px)</span>;
+  <span class="prop">box-shadow</span>: <span class="val">0 12px 40px rgba(0,0,0,0.15)</span>;
+  <span class="prop">transition</span>: <span class="val">all 0.35s ease</span>;
+}
+
+<span class="comment">/* Fade-in animation */</span>
+.fade-in-el {
+  <span class="prop">opacity</span>: <span class="val">0</span>;
+  <span class="prop">transform</span>: <span class="val">translateY(30px)</span>;
+  <span class="prop">transition</span>: <span class="val">opacity 0.7s ease, transform 0.7s ease</span>;
+}
+.fade-in-el.visible {
+  <span class="prop">opacity</span>: <span class="val">1</span>;
+  <span class="prop">transform</span>: <span class="val">translateY(0)</span>;
+}
+
+<span class="comment">/* Dot pattern לרקע ירוק */</span>
+.green-section-bg::before {
+  <span class="prop">content</span>: <span class="val">''</span>;
+  <span class="prop">position</span>: <span class="val">absolute</span>;
+  <span class="prop">inset</span>: <span class="val">0</span>;
+  <span class="prop">background-image</span>: <span class="val">radial-gradient(circle at 2px 2px, rgba(255,255,255,0.04) 1px, transparent 0)</span>;
+  <span class="prop">background-size</span>: <span class="val">40px 40px</span>;
+  <span class="prop">pointer-events</span>: <span class="val">none</span>;
+}</div>
+  </div>
+
+  <!-- ===== IMAGES ===== -->
+  <h2>7. תמונות נדרשות</h2>
+  <div class="card">
+    <table>
+      <tr><th>שם קובץ</th><th>תיאור</th><th>היכן משמש</th><th>מידות מומלצות</th></tr>
+      <tr><td><code>hummus-box.jpeg</code></td><td>קופסת חומוס</td><td>Hero, לפני הסיפור, כרטיס שירות, גלריה</td><td>800×800px</td></tr>
+      <tr><td><code>events-booth.jpg</code></td><td>דוכן אירועים</td><td>לפני הסיפור גלריה, כרטיס שירות, גלריה</td><td>1200×800px</td></tr>
+      <tr><td><code>amir-eating.jpg</code></td><td>אמיר הבעלים</td><td>סקשן המייסד, גלריה</td><td>800×1000px (portrait)</td></tr>
+      <tr><td><code>products-spread.jpg</code></td><td>מגוון מוצרים</td><td>גלריה, לפני הסיפור</td><td>1200×800px</td></tr>
+      <tr><td><code>takeaway-spread.jpg</code></td><td>טייקאווי</td><td>גלריה ראשית, כרטיס שירות</td><td>1200×800px</td></tr>
+    </table>
+  </div>
+
+  <!-- ===== CONTACT ===== -->
+  <h2>8. פרטי קשר לעדכון</h2>
+  <div class="card">
+    <div class="copy-row"><span>טלפון</span><span class="copy-val">052-3130525</span></div>
+    <div class="copy-row"><span>WhatsApp</span><span class="copy-val">https://wa.me/9720523130525</span></div>
+    <div class="copy-row"><span>אימייל</span><span class="copy-val">info@hummus-shaykale.co.il</span></div>
+    <div class="copy-row"><span>כתובת</span><span class="copy-val">יוסף לישנסקי 5, ראשון לציון</span></div>
+    <div class="copy-row"><span>שעות א'–ה'</span><span class="copy-val">10:00 – 16:30</span></div>
+    <div class="copy-row"><span>שעות ו'</span><span class="copy-val">09:00 – 15:00</span></div>
+    <div class="copy-row"><span>Google Maps URL</span><span class="copy-val">https://www.google.com/maps?q=יוסף+לישנסקי+5+ראשון+לציון</span></div>
+  </div>
+
+  <!-- ===== PLUGINS ===== -->
+  <h2>9. תוספי WordPress מומלצים</h2>
+  <div class="card">
+    <table>
+      <tr><th>תוסף</th><th>תפקיד</th><th>חינם/פרימיום</th></tr>
+      <tr><td><strong>Elementor Pro</strong></td><td>בניית הדף, Header, Footer, Form</td><td>פרימיום</td></tr>
+      <tr><td><strong>WP Rocket</strong></td><td>מהירות טעינה</td><td>פרימיום</td></tr>
+      <tr><td><strong>Yoast SEO</strong></td><td>קידום אורגני</td><td>חינם</td></tr>
+      <tr><td><strong>WPForms Lite</strong></td><td>טופס צור קשר (חלופה לאלמנטור Form)</td><td>חינם</td></tr>
+      <tr><td><strong>Smush</strong></td><td>דחיסת תמונות אוטומטית</td><td>חינם</td></tr>
+      <tr><td><strong>Google Fonts Typography</strong></td><td>טעינת Heebo, Secular One, Amatic SC</td><td>חינם</td></tr>
+      <tr><td><strong>Duplicator</strong></td><td>גיבוי ועברה בין שרתים</td><td>חינם</td></tr>
+    </table>
+  </div>
+
+  <div style="background:#14532d;color:white;border-radius:16px;padding:24px;margin-top:32px;text-align:center;">
+    <div style="font-family:'Secular One',sans-serif;font-size:1.3rem;margin-bottom:8px;">מדריך זה מבוסס על האתר הנוכחי</div>
+    <div style="opacity:0.7;font-size:0.9rem;">buzzmaket.github.io/hummus-shaykale</div>
+  </div>
+
+</div>
+</body>
+</html>
