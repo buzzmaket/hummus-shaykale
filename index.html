@@ -7,7 +7,7 @@
   <meta name="description" content="חומוס שייקל'ה - מאז 2008. חומוס טרי, קטרינג לאירועים, הרצאות ומעורבות קהילתית.">
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="page-home">
 
   <!-- Scroll Progress Bar -->
   <div class="scroll-progress"></div>
@@ -17,15 +17,15 @@
     <div class="header-inner">
       <a href="index.html" class="logo">חומוס <span>שייקל'ה</span></a>
       <nav class="nav-links">
-        <a href="#before-story">הסיפור שלנו</a>
-        <a href="#services">מה אנחנו מציעים</a>
-        <a href="#testimonials">לקוחות</a>
-        <a href="#visit">המיקום</a>
+        <a href="#before-story">המוצר</a>
+        <a href="#story">הסיפור</a>
+        <a href="#services">שירותים</a>
+        <a href="#gallery-section">גלריה</a>
         <a href="sales-points.html">נקודות מכירה</a>
         <a href="contact.html">צור קשר</a>
       </nav>
       <div class="header-cta">
-        <a href="#" class="btn btn-primary btn-sm">הזמן עכשיו</a>
+        <a href="https://wa.me/9720523130525" class="btn btn-primary btn-sm" target="_blank">הזמן עכשיו</a>
       </div>
       <button class="hamburger" aria-label="תפריט">
         <span></span><span></span><span></span>
@@ -34,34 +34,38 @@
   </header>
 
   <nav class="mobile-nav">
-    <a href="#before-story">הסיפור שלנו</a>
-    <a href="#services">מה אנחנו מציעים</a>
-    <a href="#testimonials">לקוחות</a>
-    <a href="#visit">המיקום</a>
+    <a href="#before-story">המוצר</a>
+    <a href="#story">הסיפור</a>
+    <a href="#services">שירותים</a>
+    <a href="#gallery-section">גלריה</a>
     <a href="sales-points.html">נקודות מכירה</a>
     <a href="contact.html">צור קשר</a>
-    <a href="#" class="btn btn-primary">הזמן עכשיו</a>
+    <a href="https://wa.me/9720523130525" class="btn btn-primary" target="_blank">הזמן עכשיו</a>
   </nav>
 
   <!-- ===== HERO ===== -->
   <section class="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-particles" id="particles"></div>
+    <div class="hero-bg-word" aria-hidden="true">שייקל'ה</div>
+    <div class="hero-dot-grid" aria-hidden="true"></div>
     <div class="container">
       <div class="hero-text fade-in">
-        <span class="script">הכי ישראלי בעולם</span>
-        <h1>חומוס שייקל'ה</h1>
-        <p>מאז 2008 מביאים לכם חומוס אמיתי — בחומסייה, בקופסא ובאירועים. עם הטוויסט המיוחד שלנו: סומק.</p>
+        <span class="hero-eyebrow">מאז 2008 — ראשון לציון</span>
+        <h1 class="hero-title">
+          <span class="hero-title-line1">חומוס</span>
+          <span class="hero-title-line2">שייקל'ה</span>
+        </h1>
+        <p class="hero-sub">חומוס ביתי אמיתי — מתכון מסורתי עם סומק ייחודי שלא תמצאו בשום מקום אחר.</p>
         <div class="hero-buttons">
           <a href="sales-points.html" class="btn btn-primary btn-lg">מצאו נקודת מכירה</a>
-          <a href="#before-story" class="btn btn-white btn-lg">גלו את הסיפור</a>
+          <a href="#before-story" class="btn btn-ghost btn-lg">גלו את הסיפור</a>
         </div>
       </div>
       <div class="hero-visual">
         <div class="hero-image-wrapper">
           <img src="images/hummus-box.jpeg" alt="חומוס שייקל'ה בקופסא" class="hero-product-img">
-          <div class="badge-sticker">מאז<br>2008</div>
-          <div class="hero-glow"></div>
+          <div class="hero-ring hero-ring-1" aria-hidden="true"></div>
+          <div class="hero-ring hero-ring-2" aria-hidden="true"></div>
+          <div class="badge-sticker" aria-hidden="true">מאז<br>2008</div>
         </div>
       </div>
     </div>
@@ -74,53 +78,41 @@
   <!-- ===== BEFORE THE STORY — Two Parts ===== -->
   <section id="before-story" class="section-white">
     <div class="container">
-      <div class="section-header fade-in">
+
+      <!-- Part badge -->
+      <div class="two-parts-header fade-in">
         <span class="section-label">לפני הסיפור</span>
-        <span class="script">הכירו אותנו</span>
-        <h2>הסיפור שלנו בשני חלקים</h2>
+        <h2>שני דברים שאתם חייבים לדעת</h2>
       </div>
 
       <!-- === PART 1: חומוס בקופסא === -->
       <div class="before-story-part fade-in">
         <div class="product-showcase">
+
+          <!-- Radial Value Wheel -->
           <div class="product-image-area">
             <div class="product-mockup">
+              <svg class="value-spokes" viewBox="0 0 580 580" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <line x1="290" y1="290" x2="290" y2="62"/>
+                <line x1="290" y1="290" x2="510" y2="163"/>
+                <line x1="290" y1="290" x2="510" y2="418"/>
+                <line x1="290" y1="290" x2="290" y2="518"/>
+                <line x1="290" y1="290" x2="70" y2="418"/>
+                <line x1="290" y1="290" x2="70" y2="163"/>
+                <circle cx="290" cy="290" r="120" fill="none" stroke-dasharray="8,8"/>
+              </svg>
               <div class="product-img-container">
-                <img src="images/hummus-box.jpeg" alt="חומוס שייקל'ה בקופסא" class="product-hero-img">
+                <img src="images/hummus-box.jpeg" alt="חומוס שייקל'ה בקופסא">
               </div>
-              <!-- Radiating value lines -->
-              <div class="value-line value-line-1">
-                <span class="value-dot"></span>
-                <span class="value-connector"></span>
-                <span class="value-text">100% טבעי</span>
-              </div>
-              <div class="value-line value-line-2">
-                <span class="value-dot"></span>
-                <span class="value-connector"></span>
-                <span class="value-text">ללא חומרים משמרים</span>
-              </div>
-              <div class="value-line value-line-3">
-                <span class="value-dot"></span>
-                <span class="value-connector"></span>
-                <span class="value-text">עשיר בחלבון</span>
-              </div>
-              <div class="value-line value-line-4">
-                <span class="value-dot"></span>
-                <span class="value-connector"></span>
-                <span class="value-text">סומק ייחודי</span>
-              </div>
-              <div class="value-line value-line-5">
-                <span class="value-dot"></span>
-                <span class="value-connector"></span>
-                <span class="value-text">טרי מהיצרן</span>
-              </div>
-              <div class="value-line value-line-6">
-                <span class="value-dot"></span>
-                <span class="value-connector"></span>
-                <span class="value-text">כשר</span>
-              </div>
+              <div class="value-badge vb-1">100% טבעי</div>
+              <div class="value-badge vb-2">ללא חומרים משמרים</div>
+              <div class="value-badge vb-3">עשיר בחלבון</div>
+              <div class="value-badge vb-4">סומק ייחודי</div>
+              <div class="value-badge vb-5">טרי מהיצרן</div>
+              <div class="value-badge vb-6">כשר</div>
             </div>
           </div>
+
           <div class="product-info">
             <div class="part-badge">01</div>
             <h3>חומוס בקופסא</h3>
@@ -130,6 +122,7 @@
                 <span class="size-weight">250</span>
                 <span class="size-unit">גרם</span>
               </div>
+              <div class="size-divider"></div>
               <div class="size-option">
                 <span class="size-weight">500</span>
                 <span class="size-unit">גרם</span>
@@ -143,7 +136,7 @@
       <!-- Divider -->
       <div class="section-divider fade-in">
         <div class="divider-line"></div>
-        <div class="divider-icon">&#10022;</div>
+        <div class="divider-icon">✦</div>
         <div class="divider-line"></div>
       </div>
 
@@ -160,21 +153,15 @@
           <div class="hummusiya-gallery">
             <div class="hummusiya-img hummusiya-img-main">
               <img src="images/takeaway-spread.jpg" alt="מגוון מוצרי חומוס שייקל'ה">
-              <div class="img-overlay">
-                <span>המוצרים שלנו</span>
-              </div>
+              <div class="img-overlay"><span>המוצרים שלנו</span></div>
             </div>
             <div class="hummusiya-img">
               <img src="images/events-booth.jpg" alt="דוכן אירועים חומוס שייקל'ה">
-              <div class="img-overlay">
-                <span>אירועים</span>
-              </div>
+              <div class="img-overlay"><span>אירועים</span></div>
             </div>
             <div class="hummusiya-img">
               <img src="images/products-spread.jpg" alt="מגוון מוצרים">
-              <div class="img-overlay">
-                <span>המגוון שלנו</span>
-              </div>
+              <div class="img-overlay"><span>המגוון שלנו</span></div>
             </div>
           </div>
         </div>
@@ -182,8 +169,9 @@
     </div>
   </section>
 
-  <!-- ===== AMIR / FOUNDER ===== -->
-  <section class="section-cream founder-section">
+  <!-- ===== FOUNDER / AMIR ===== -->
+  <section class="founder-section">
+    <div class="founder-bg-text" aria-hidden="true">אמיר</div>
     <div class="container">
       <div class="founder-grid fade-in">
         <div class="founder-image">
@@ -191,10 +179,10 @@
           <div class="founder-frame"></div>
         </div>
         <div class="founder-text">
-          <span class="section-label">הפנים מאחורי הטעם</span>
-          <h2>אמיר — הלב של שייקל'ה</h2>
+          <span class="section-label section-label-light">הפנים מאחורי הטעם</span>
+          <h2>אמיר —<br>הלב של שייקל'ה</h2>
           <p>כבר 18 שנה שאמיר חי ונושם חומוס. מה שהתחיל כחלום קטן בתחנת דלק הפך לסיפור ישראלי מרגש — של טעם, תשוקה ואהבה לקהילה.</p>
-          <blockquote>
+          <blockquote class="founder-quote">
             "כשאני אוכל חומוס, אני יודע שזה מושלם רק כשהלקוחות שלי מחייכים"
           </blockquote>
         </div>
@@ -203,47 +191,62 @@
   </section>
 
   <!-- ===== STORY / TIMELINE ===== -->
-  <section id="story" class="section-green">
+  <section id="story" class="section-story">
     <div class="container">
       <div class="section-header fade-in">
-        <span class="section-label">הסיפור שלנו</span>
+        <span class="section-label section-label-light">הסיפור שלנו</span>
         <span class="script">18 שנה של טעם</span>
         <h2>הדרך שלנו</h2>
       </div>
       <div class="timeline fade-in">
         <div class="timeline-item">
-          <div class="timeline-year">2008</div>
+          <div class="timeline-marker">
+            <span class="timeline-year">2008</span>
+            <div class="timeline-dot"></div>
+          </div>
           <div class="timeline-content">
             <h4>הקמת החומסייה</h4>
             <p>חומסייה קטנה בתחנת דלק בראשון לציון — החלום הגדול מתחיל</p>
           </div>
         </div>
         <div class="timeline-item">
-          <div class="timeline-year">2015</div>
+          <div class="timeline-marker">
+            <span class="timeline-year">2015</span>
+            <div class="timeline-dot"></div>
+          </div>
           <div class="timeline-content">
             <h4>המתכון עם הסומק</h4>
             <p>הטוויסט הייחודי שהפך אותנו לשונים מכולם — סומק מיוחד בכל מנה</p>
           </div>
         </div>
         <div class="timeline-item">
-          <div class="timeline-year">2020</div>
+          <div class="timeline-marker">
+            <span class="timeline-year">2020</span>
+            <div class="timeline-dot"></div>
+          </div>
           <div class="timeline-content">
             <h4>אירועים וקטרינג</h4>
             <p>מאירועי חברה ועד חתונות — החומוס שלנו מגיע לכל מקום</p>
           </div>
         </div>
         <div class="timeline-item">
-          <div class="timeline-year">2025</div>
+          <div class="timeline-marker">
+            <span class="timeline-year">2025</span>
+            <div class="timeline-dot"></div>
+          </div>
           <div class="timeline-content">
             <h4>חומוס בקופסא</h4>
             <p>המתכון המקורי עכשיו בסופר ליד הבית — 250 ו-500 גרם</p>
           </div>
         </div>
         <div class="timeline-item">
-          <div class="timeline-year">2026</div>
+          <div class="timeline-marker">
+            <span class="timeline-year">2026</span>
+            <div class="timeline-dot timeline-dot-now"></div>
+          </div>
           <div class="timeline-content">
             <h4>15+ נקודות מכירה</h4>
-            <p>מכל הארץ מגיעים לטעום — ועכשיו גם קונים בקרבת מקום</p>
+            <p>מכל הארץ מגיעים לטעום — ועכשיו גם קונים בקרבת מקום ✨</p>
           </div>
         </div>
       </div>
@@ -263,67 +266,73 @@
         <div class="service-card service-card-featured">
           <div class="service-card-img">
             <img src="images/takeaway-spread.jpg" alt="החומסייה">
+            <div class="service-img-overlay"></div>
           </div>
           <div class="service-card-body">
+            <span class="service-number">01</span>
             <h3>החומסייה</h3>
             <p>חומוס טרי, אווירה משפחתית ושירות עם חיוך — בלב ראשון לציון</p>
-            <a href="#visit" class="link">גלו עוד &#8592;</a>
+            <a href="#visit" class="link-arrow">גלו עוד &#8592;</a>
           </div>
         </div>
 
         <div class="service-card service-card-featured">
           <div class="service-card-img">
             <img src="images/hummus-box.jpeg" alt="חומוס בקופסא">
+            <div class="service-img-overlay"></div>
           </div>
           <div class="service-card-body">
+            <span class="service-number">02</span>
             <h3>חומוס בקופסא</h3>
             <p>פותחים חומסייה בבית — טרי ב-250 ו-500 גרם, בנקודות מכירה</p>
-            <a href="sales-points.html" class="link">מצאו נקודה &#8592;</a>
+            <a href="sales-points.html" class="link-arrow">מצאו נקודה &#8592;</a>
           </div>
         </div>
 
         <div class="service-card service-card-featured">
           <div class="service-card-img">
             <img src="images/events-booth.jpg" alt="אירועים וקטרינג">
+            <div class="service-img-overlay"></div>
           </div>
           <div class="service-card-body">
+            <span class="service-number">03</span>
             <h3>אירועים וקטרינג</h3>
             <p>מאירועי חברה ועד חתונות — חבילות מ-50 &#8362; למנה</p>
-            <a href="contact.html" class="link">דברו איתנו &#8592;</a>
+            <a href="contact.html" class="link-arrow">דברו איתנו &#8592;</a>
           </div>
         </div>
 
-        <div class="service-card">
-          <div class="service-icon"><span>&#127908;</span></div>
+        <div class="service-card service-card-simple">
+          <span class="service-emoji">🎙️</span>
           <h3>הרצאות</h3>
           <p>28 שנות ניסיון ביזמות ושירות — הרצאות מעוררות השראה</p>
-          <a href="contact.html" class="link">הזמינו הרצאה &#8592;</a>
+          <a href="contact.html" class="link-arrow">הזמינו הרצאה &#8592;</a>
         </div>
 
-        <div class="service-card">
-          <div class="service-icon"><span>&#10084;&#65039;</span></div>
+        <div class="service-card service-card-simple">
+          <span class="service-emoji">❤️</span>
           <h3>קהילה</h3>
-          <p>תמיכה בחיילים, עמותת אנוש, נוער בסיכון — נותנים בחזרה</p>
-          <span class="link">קראו עוד &#8592;</span>
+          <p>תמיכה בחיילים, עמות אנוש, נוער בסיכון — נותנים בחזרה</p>
+          <span class="link-arrow">קראו עוד &#8592;</span>
         </div>
 
-        <div class="service-card">
-          <div class="service-icon"><span>&#128205;</span></div>
+        <div class="service-card service-card-simple">
+          <span class="service-emoji">📍</span>
           <h3>נקודות מכירה</h3>
           <p>מעל 15 נקודות בכל הארץ — מצאו חומוס שייקל'ה קרוב אליכם</p>
-          <a href="sales-points.html" class="link">למפה &#8592;</a>
+          <a href="sales-points.html" class="link-arrow">למפה &#8592;</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ===== STATS ===== -->
-  <section class="section-white stats-section">
+  <section class="stats-section">
     <div class="container">
       <div class="stats-grid fade-in">
         <div class="stat-item">
           <div class="stat-number" data-count="18">0</div>
-          <div class="stat-label">שנים של חומוס מצוין</div>
+          <div class="stat-label">שנות חומוס מצוין</div>
         </div>
         <div class="stat-item">
           <div class="stat-number" data-count="15" data-suffix="+">0</div>
@@ -345,7 +354,7 @@
   <section id="testimonials" class="section-green">
     <div class="container">
       <div class="section-header fade-in">
-        <span class="section-label">מה אומרים עלינו</span>
+        <span class="section-label section-label-light">מה אומרים עלינו</span>
         <span class="script">סיפורים אמיתיים</span>
         <h2>הלקוחות מספרים</h2>
       </div>
@@ -362,7 +371,7 @@
             </div>
           </div>
         </div>
-        <div class="testimonial-card">
+        <div class="testimonial-card testimonial-card-accent">
           <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
           <p class="quote">"עושים קטרינג כבר 3 שנים לאירועי החברה. תמיד מושלם, תמיד בזמן!"</p>
           <div class="testimonial-author">
@@ -389,9 +398,10 @@
   </section>
 
   <!-- ===== GALLERY ===== -->
-  <section class="section-cream">
+  <section id="gallery-section" class="section-gallery">
     <div class="container">
       <div class="section-header fade-in">
+        <span class="section-label section-label-light">תמונות</span>
         <span class="script">רגעים טעימים</span>
         <h2>הגלריה</h2>
       </div>
@@ -432,21 +442,21 @@
       <div class="visit-grid fade-in">
         <div class="visit-info">
           <div class="info-row">
-            <div class="info-icon">&#128205;</div>
+            <div class="info-icon">📍</div>
             <div>
               <strong>כתובת</strong>
               <p>יוסף לישנסקי 5, ראשון לציון</p>
             </div>
           </div>
           <div class="info-row">
-            <div class="info-icon">&#128222;</div>
+            <div class="info-icon">📞</div>
             <div>
               <strong>טלפון</strong>
               <p><a href="tel:0523130525">052-3130525</a></p>
             </div>
           </div>
           <div class="info-row">
-            <div class="info-icon">&#128339;</div>
+            <div class="info-icon">🕐</div>
             <div>
               <strong>שעות פתיחה</strong>
               <div class="hours-table">
@@ -456,14 +466,14 @@
               </div>
             </div>
           </div>
-          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:28px;">
+          <div class="visit-actions">
             <a href="#" class="btn btn-primary btn-sm">Wolt</a>
             <a href="#" class="btn btn-primary btn-sm">10bis</a>
-            <a href="tel:0523130525" class="btn btn-secondary btn-sm">&#128222; התקשרו</a>
+            <a href="tel:0523130525" class="btn btn-secondary btn-sm">📞 התקשרו</a>
           </div>
         </div>
         <div class="map-container">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.5!2d34.7897!3d31.9642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDU3JzUxLjEiTiAzNMKwNDcnMjIuOSJF!5e0!3m2!1siw!2sil!4v1700000000000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.5!2d34.7897!3d31.9642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDU3JzUxLjEiTiAzNMKwNDcnMjIuOSJF!5e0!3m2!1siw!2sil!4v1700000000000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="מפת החומסייה"></iframe>
         </div>
       </div>
     </div>
@@ -471,18 +481,15 @@
 
   <!-- ===== CTA ===== -->
   <section class="cta-section">
+    <div class="cta-bg-text" aria-hidden="true">חומוס</div>
     <div class="container fade-in">
       <span class="script">בואו נדבר</span>
       <h2>יש שאלות? רוצים להזמין?</h2>
-      <p>נשמח לשמוע מכם</p>
+      <p>נשמח לשמוע מכם — כל שאלה, כל אירוע, כל חיוך</p>
       <div class="cta-buttons">
-        <a href="tel:0523130525" class="btn btn-white btn-lg">&#128222; התקשרו</a>
-        <a href="https://wa.me/9720523130525" class="btn btn-white btn-lg">&#128172; WhatsApp</a>
-        <a href="contact.html" class="btn btn-primary btn-lg">&#9993; צור קשר</a>
-      </div>
-      <div class="social-links">
-        <a href="#" class="social-link" aria-label="Instagram">&#128247;</a>
-        <a href="#" class="social-link" aria-label="Facebook">f</a>
+        <a href="tel:0523130525" class="btn btn-white btn-lg">📞 התקשרו</a>
+        <a href="https://wa.me/9720523130525" class="btn btn-white btn-lg" target="_blank">💬 WhatsApp</a>
+        <a href="contact.html" class="btn btn-primary btn-lg">✉️ צור קשר</a>
       </div>
     </div>
   </section>
@@ -497,17 +504,17 @@
         </div>
         <div class="footer-col">
           <h4>ניווט</h4>
-          <a href="#before-story">הסיפור שלנו</a>
+          <a href="#before-story">המוצר</a>
+          <a href="#story">הסיפור</a>
           <a href="#services">שירותים</a>
-          <a href="#visit">המיקום</a>
           <a href="sales-points.html">נקודות מכירה</a>
           <a href="contact.html">צור קשר</a>
         </div>
         <div class="footer-col">
           <h4>יצירת קשר</h4>
-          <p>&#128222; 052-3130525</p>
-          <p>&#128205; לישנסקי 5, ראשון לציון</p>
-          <p>&#9993; info@hummus-shaykale.co.il</p>
+          <p>📞 052-3130525</p>
+          <p>📍 לישנסקי 5, ראשון לציון</p>
+          <p>✉️ info@hummus-shaykale.co.il</p>
         </div>
       </div>
       <div class="footer-bottom">
